@@ -35,6 +35,7 @@ MediaBrowser can display one or more images or videos by providing either UIImag
 
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
+  s.swift_versions = ['5.0', '5.1', '5.2']
 
   s.dependency 'SDWebImage'
   s.dependency 'UICircularProgressRing'
