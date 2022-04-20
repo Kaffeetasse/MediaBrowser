@@ -632,7 +632,7 @@ func floorcgf(x: CGFloat) -> CGFloat {
         }
         
         // Set style
-        if !leaveStatusBarAlone && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
+        if !leaveStatusBarAlone && UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone {
             previousStatusBarStyle = UIApplication.shared.statusBarStyle
             UIApplication.shared.setStatusBarStyle(statusBarStyle, animated: animated)
         }
@@ -717,7 +717,7 @@ func floorcgf(x: CGFloat) -> CGFloat {
         setControlsHidden(hidden: false, animated: false, permanent: true)
         
         // Status bar
-        if !leaveStatusBarAlone && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
+        if !leaveStatusBarAlone && UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone {
             UIApplication.shared.setStatusBarStyle(previousStatusBarStyle, animated: animated)
         }
 
